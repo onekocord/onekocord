@@ -1,0 +1,24 @@
+/**
+  * @name Onekoprogressbars
+  * @author cutekita
+  * @version 2.0
+  * @description Places Oneko onto progressbars
+  * @website https://github.com/onekocord/onekocord
+*/
+
+/*Set the bar container to be flex*/
+.bar__8e51c {
+  display: flex;
+}
+/*Add Oneko*/
+.bar__8e51c:after {
+  content: "";
+  background: var(--onekoprogressbar-skin, url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png));
+  animation: var(--onekoprogressbar-duration, 0.3s) infinite var(--onekoprogressbar-animation, runright);
+  image-rendering: var(--onekoprogressbar-rendering, pixelated);
+  width: 32px;
+  height: 32px;
+  top: var(--onekoprogressbar-top, -28px);
+  left: var(--onekoprogressbar-left, -16px);
+  position: relative;
+}

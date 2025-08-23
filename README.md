@@ -1,51 +1,15 @@
 # Onekocord: Oneko for Discord!
 
-Oneko, the internet cat, implemented into discord wherever you wish! 
-Hosted here are skins and code snippets for oneko that should be compatible for all web based clients
-
-## Content
-**Onekoanimations**
-
-Onekoanimations.css is needed for all Oneko snippets. It supplies the animations to the Oneko snippets.
-
-**Onekohomeicon**
-
-An Oneko for your home icon!
-
-![image](images/Homeicon.png)
-
-**Onekomessagebar**
-
-Oneko on your message input!
-
-![image](images/Messagebar.png)
-
-**Onekotoolbox**
-
-Replaces the new sleeping Oneko on the Vencordtoolbox with a custom Oneko!
-
-![image](images/Toolbox.png)
-
-**Onekoavatar** 
-
-Replace your avatar with an interactive Oneko
-
-![image](images/Avatar.png)
-
-**Onekowelcome**
-
-Replace the "Wave to say hi!" Sticker with Oneko
-
-![image](images/Welcome.png)
+Oneko, the internet cat, implemented into Discord wherever you wish! 
+Hosted here are skins and code snippets for Oneko that should be compatible for all web based clients (Vencord, Betterdiscord, etc.)
 
 ## Installation
 
-Install onekocord by importing the snippets you want, or by using the premade [theme](https://raw.githubusercontent.com/coolesding/onekocord/refs/heads/main/onekocord.theme.css). Add the contents of that file to your quickcss. Move all lines starting with `@import` to the top
+To install Onekocord, open [this file](https://github.com/onekocord/onekocord/blob/main/onekocord.theme.css) and **EITHER** copy the links from all lines starting with @import and add them as Online themes **OR** copy all contents of the file to the top of your QuickCSS/CustomCSS file.
 
-To see all configurable variables check the [theme](https://raw.githubusercontent.com/coolesding/onekocord/refs/heads/main/onekocord.theme.css)
+TODO: clarification and links on how to open those
 
 ## Animations
-
 
 Valid animations are:
   - alert
@@ -60,7 +24,6 @@ Valid animations are:
   - sleep (EXPERIMENTAL)
   - wakeup (EXPERIMENTAL)
   - gotosleep (EXPERIMENTAL)
-  - messagebarwalk (EXPERIMENTAL)
 
 Experimental animations are technically valid animations, though they might not work as expected.
 
@@ -83,4 +46,6 @@ To contribute, simply open a pull request with your code or skin, or open an iss
 
 </details>
 
-Unless otherwise specified, do not distribute the code of this project directly, since it will cause conflicting versions for people, always use a link to raw files or to the repository to refer to Onekocord.
+## Note
+
+Please link to this repository instead of copying code, otherwise there will be differing and conflicting code, if you want to add something, please make a pull request or suggest a feature/fix

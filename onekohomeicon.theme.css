@@ -1,0 +1,32 @@
+/**
+  * @name Onekohomeicon
+  * @author cutekita
+  * @version 2.0
+  * @description Replaces the home icon with Oneko
+  * @website https://github.com/onekocord/onekocord
+*/
+
+/*Add Oneko*/
+.tutorialContainer__1f388>.listItem__650eb>.listItemWrapper__91816>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject>.wrapper__6e9f8 {
+  background: var(--onekohomeicon-skin, url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png));
+  animation: var(--onekohomeicon-wakeup-duration, 2s) 1 forwards gotosleep, var(--onekohomeicon-sleep-duration, 1s) var(--onekohomeicon-wakeup-duration, 2s) infinite var(--onekohomeicon-sleep-animation, sleep);
+  image-rendering: var(--onekohomeicon-rendering, pixelated);
+  opacity: var(--onekohomeicon-opacity, 0.7);
+  width: 32px;
+  height: 32px;
+  margin-top: 4px;
+  justify-self: center;
+  &>.childWrapper__6e9f8 /*Remove original icon*/{
+  display: none;
+  }
+}
+
+.tutorialContainer__1f388:hover>.listItem__650eb>.listItemWrapper__91816>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject>.wrapper__6e9f8 {
+  animation: var(--onekohomeicon-wakeup-duration, 2s) 1 forwards var(--onekohomeicon-wakeup-animation, wakeup), var(--onekohomeicon-hovered-duration, 0.3s) var(--onekohomeicon-wakeup-duration, 2s) infinite var(--onekohomeicon-hovered-animation, alert);
+  opacity: 1;
+}
+
+.tutorialContainer__1f388>.listItem__650eb>.listItemWrapper__91816.selected__91816>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject>.wrapper__6e9f8 {
+  animation: var(--onekohomeicon-wakeup-duration, 2s) 1 forwards var(--onekohomeicon-wakeup-animation, wakeup), var(--onekohomeicon-selected-duration, 0.3s) var(--onekohomeicon-wakeup-duration, 2s) infinite var(--onekohomeicon-selected-animation, runright);
+  opacity: 1;
+}

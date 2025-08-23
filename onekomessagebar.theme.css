@@ -1,0 +1,28 @@
+/**
+  * @name Onekomessagebar
+  * @author cutekita
+  * @version 2.0
+  * @description Places Oneko on your messagebar
+  * @website https://github.com/onekocord/onekocord
+*/
+
+/*Add Oneko*/
+.channelTextArea__74017:before {
+  content: "";
+  background: var(--onekomessagebar-skin, url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png));
+  animation: var(--onekomessagebar-wakeup-duration, 2s) 1 forwards gotosleep, var(--onekomessagebar-sleep-duration, 2s) var(--onekomessagebar-wakeup-duration, 2s) infinite var(--onekomessagebar-sleep-animation, sleep);
+  image-rendering: var(--onekomessagebar-rendering, pixelated);
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: var(--onekomessagebar-position-top, -30px);
+  left: var(--onekomessagebar-position-left, 20px);
+}
+
+.channelTextArea__74017:hover:before {
+  animation: var(--onekomessagebar-wakeup-duration, 2s) 1 forwards var(--onekomessagebar-wakeup-animation, wakeup), var(--onekomessagebar-hovered-duration, 0.3s) var(--onekomessagebar-wakeup-duration, 2s) infinite var(--onekomessagebar-hovered-animation, alert)
+}
+
+.channelTextArea__74017:has(.editor__1b31f:focus):before {
+  animation: var(--onekomessagebar-wakeup-duration, 2s) 1 forwards var(--onekomessagebar-wakeup-animation, wakeup), var(--onekomessagebar-selected-duration, 0.3s) var(--onekomessagebar-wakeup-duration, 2s) infinite var(--onekomessagebar-selected-animation, alert);
+}

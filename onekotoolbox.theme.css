@@ -1,0 +1,27 @@
+/**
+  * @name Onekoattachmenticon
+  * @author cutekita
+  * @version 2.0
+  * @description Replaces the Vencord/Equicord toolbox icon with Oneko
+  * @website https://github.com/onekocord/onekocord
+*/
+
+/*Hide original icon*/
+.vc-toolbox-icon {
+  display: none;
+}
+/*Add Oneko*/
+.vc-toolbox-btn {
+  background: var(--onekotoolbox-skin, url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png));
+  animation: var(--onekotoolbox-wakeup-duration, 2s) 1 forwards gotosleep, var(--onekotoolbox-sleep-duration, 2s) var(--onekotoolbox-wakeup-duration, 2s) infinite var(--onekotoolbox-sleep-animation, sleep);
+  opacity: var(--onekotoolbox-opacity, 0.7);
+  transition: opacity var(--onekotoolbox-opacity-transition, 0.2s ease);
+  &:hover {
+    animation: var(--onekotoolbox-wakeup-duration, 2s) 1 forwards var(--onekohomeicon-wakeup-animation, wakeup), var(--onekotoolbox-hovered-duration, 0.3s) var(--onekotoolbox-wakeup-duration, 2s) infinite var(--onekotoolbox-hovered-animation, alert);
+    opacity: 1;
+  }
+  &.selected__9293f {
+    animation: var(--onekotoolbox-wakeup-duration, 2s) 1 forwards var(--onekotoolbox-wakeup-animation, wakeup), var(--onekotoolbox-selected-duration, 0.3s) var(--onekotoolbox-wakeup-duration, 2s) infinite var(--onekotoolbox-selected-animation, alert);
+    opacity: 1;
+  }
+}

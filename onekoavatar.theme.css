@@ -1,0 +1,29 @@
+/**
+  * @name Onekoavatar
+  * @author cutekita
+  * @version 2.0
+  * @description Replaces the avatar in the bottom left with Oneko
+  * @website https://github.com/onekocord/onekocord
+*/
+
+/*Add Oneko*/
+.avatar__37e49>.mask__44b0c>foreignObject>.avatarStack__44b0c>.avatar__44b0c {
+  content: url(-);
+  background: var(--onekoavatar-skin, url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png));
+  animation: var(--onekoavatar-wakeup-duration, 2s) 1 forwards gotosleep, var(--onekoavatar-sleep-duration, 2s) var(--onekoavatar-wakeup-duration, 2s) infinite var(--onekoavatar-sleep-animation, sleep);
+  image-rendering: var(--onekovatar-rendering, pixelated);
+  width: 32px;
+  height: 32px;
+  justify-self: center;
+  &:before /*Remove a weird background left behind from something else*/{
+    background: none;
+  }
+}
+
+.avatarWrapper__37e49:hover>.avatar__37e49>.mask__44b0c>foreignObject>.avatarStack__44b0c>.avatar__44b0c {
+  animation: var(--onekoavatar-wakeup-duration, 2s) 1 forwards var(--onekohomeicon-wakeup-animation, wakeup), var(--onekoavatar-hovered-duration, 0.3s) var(--onekoavatar-wakeup-duration, 2s) infinite var(--onekoavatar-hovered-animation, alert);
+}
+
+.avatarWrapper__37e49[aria-expanded="true"]>.avatar__37e49>.mask__44b0c>foreignObject>.avatarStack__44b0c>.avatar__44b0c {
+  animation: var(--onekoavatar-wakeup-duration, 2s) 1 forwards var(--onekoavatar-wakeup-animation, wakeup), var(--onekoavatar-selected-duration, 0.3s) var(--onekoavatar-wakeup-duration, 2s) infinite var(--onekoavatar-selected-animation, alert);
+}
