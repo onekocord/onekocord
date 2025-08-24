@@ -24,7 +24,7 @@
 /*Edit these values to customise Onekocord, you can remove anything you don't want to change, everything has defaults*/
 
 html { /*Onekoattachmenticon*/
-  --onekoattachmenticon-skin: url(https://raw.githubusercontent.com/coolesding/onekocord/main/skins/default.png);/*Replace "default" with the name of any skin, case sensitive*/
+  --onekoattachmenticon-skin: url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png);/*Replace "default" with the name of any skin, case sensitive*/
   --onekoattachmenticon-rendering: pixelated; /*https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering*/
   --onekoattachmenticon-wakeup-animation: wakeup; /*Any animation, case sensitive*/
   --onekoattachmenticon-wakeup-duration: 2s; /*Any time value*/
@@ -37,7 +37,7 @@ html { /*Onekoattachmenticon*/
 }
 
 html { /*Onekoavatar*/
-  --onekoavatar-skin: url(https://raw.githubusercontent.com/coolesding/onekocord/main/skins/default.png);/*Replace "default" with the name of any skin, case sensitive*/
+  --onekoavatar-skin: url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png);/*Replace "default" with the name of any skin, case sensitive*/
   --onekoavatar-rendering: pixelated; /*https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering*/
   --onekoavatar-wakeup-animation: wakeup; /*Any animation, case sensitive*/
   --onekoavatar-wakeup-duration: 2s; /*Any time value*/
@@ -50,7 +50,7 @@ html { /*Onekoavatar*/
 }
 
 html { /*Onekohomeicon*/
-  --onekohomeicon-skin: url(https://raw.githubusercontent.com/coolesding/onekocord/main/skins/default.png); /*Replace "default" with the name of any skin, case sensitive*/
+  --onekohomeicon-skin: url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png); /*Replace "default" with the name of any skin, case sensitive*/
   --onekohomeicon-rendering: pixelated; /*https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering*/
   --onekohomeicon-wakeup-animation: wakeup; /*Any animation, case sensitive*/
   --onekohomeicon-wakeup-duration: 2s; /*Any time value*/
@@ -63,7 +63,7 @@ html { /*Onekohomeicon*/
 }
 
 html { /*Onekomessagebar*/
-  --onekomessagebar-skin: url(https://raw.githubusercontent.com/coolesding/onekocord/main/skins/default.png);/*Replace "default" with the name of any skin, case sensitive*/
+  --onekomessagebar-skin: url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png);/*Replace "default" with the name of any skin, case sensitive*/
   --onekomessagebar-rendering: pixelated; /*https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering*/
   --onekomessagebar-position-top: -30px; /*Any length value*/
   --onekomessagebar-position-left: 20px; /*Any length value*/
@@ -78,7 +78,7 @@ html { /*Onekomessagebar*/
 }
 
 html { /*Onekoprogressbar*/
-  --onekoprogressbar-skin: url(https://raw.githubusercontent.com/coolesding/onekocord/main/skins/default.png);/*Replace "default" with the name of any skin, case sensitive*/
+  --onekoprogressbar-skin: url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png);/*Replace "default" with the name of any skin, case sensitive*/
   --onekoprogressbar-rendering: pixelated; /*https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering*/
   --onekoprogressbar-position-top: -28px; /*Any length value*/
   --onekoprogressbar-position-left: -16px; /*Any length value*/
@@ -87,7 +87,7 @@ html { /*Onekoprogressbar*/
 }
 
 html { /*Onekotoolbox*/
-  --onekotoolbox-skin: url(https://raw.githubusercontent.com/coolesding/onekocord/main/skins/default.png);/*Replace "default" with the name of any skin, case sensitive*/
+  --onekotoolbox-skin: url(https://raw.githubusercontent.com/onekocord/onekocord/main/skins/default.png);/*Replace "default" with the name of any skin, case sensitive*/
   --onekotoolbox-rendering: pixelated; /*https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering*/
   --onekotoolbox-wakeup-animation: wakeup; /*Any animation, case sensitive*/
   --onekotoolbox-wakeup-duration: 2s; /*Any time value*/
@@ -97,4 +97,5 @@ html { /*Onekotoolbox*/
   --onekotoolbox-hovered-duration: 0.3s; /*Any time value*/
   --onekotoolbox-selected-animation: alert; /*Any animation, case sensitive*/
   --onekotoolbox-selected-duration: 0.3s; /*Any time value*/
+
 }
